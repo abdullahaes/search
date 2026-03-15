@@ -1,0 +1,59 @@
+/* تنسيق عام لكل الصفحات */
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* يخلي الخلفية بيضاء دائماً */
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+/* شعار جوجل */
+h1 {
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* مربع البحث الدائري */
+input[type="text"] {
+    width: 584px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+}
+
+/* الأزرار */
+.buttons {
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <style>
+        body { font-family: arial, sans-serif; margin: 0; padding: 20px; background-color: white; color: black; }
+        .nav { display: flex; justify-content: flex-end; padding-bottom: 20px; }
+        .nav a { text-decoration: none; color: #4285f4; font-size: 13px; }
+        
+        h2 { color: #d93025; font-size: 20px; font-weight: 400; margin-top: 40px; }
+        hr { border: 0; border-top: 1px solid #ebebeb; margin-bottom: 30px; }
+
+        /* تنسيق الحقول لتكون مرتبة تحت بعض */
+        .row { display: flex; align-items: center; margin-bottom: 15px; width: 100%; max-width: 800px; }
+        .row label { width: 250px; font-size: 14px; color: #333; }
+        .row input { flex: 1; padding: 7px; border: 1px solid #d9d9d9; outline: none; }
+
+        .btn-container { display: flex; justify-content: flex-end; width: 100%; max-width: 800px; margin-top: 20px; }
+        
+        /* الزر الأزرق المطلوب */
+        .adv-btn {
+            background-color: #4d90fe;
+            color: white;
+            border: 1px solid #3079ed;
+            padding: 8px 15px;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="index.html">Google Search</a>
+    </div>
+
+    <h2>Advanced Search</h2>
+    <hr>
+
+    <form action="https://www.google.com/search">
+        <div class="row">
+            <label>all these words:</label>
+            <input type="text" name="as_q">
+        </div>
+        <div class="row">
+            <label>this exact word or phrase:</label>
+            <input type="text" name="as_epq">
+        </div>
+        <div class="row">
+            <label>any of these words:</label>
+            <input type="text" name="as_oq">
+        </div>
+        <div class="row">
+            <label>none of these words:</label>
+            <input type="text" name="as_eq">
+        </div>
+
+        <div class="btn-container">
+            <input type="submit" value="Advanced Search" class="adv-btn">
+        </div>
+    </form>
+
+</body>
+</html>
